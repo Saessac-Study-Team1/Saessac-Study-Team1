@@ -115,7 +115,7 @@ export default function MyActivityArea({locations, setLocations, locationList}){
         onKeyUp={(e)=>{addLocations(e)}}
         onChange={inputLocationChange}
         value={input}
-        placeholder="전체 지역리스트를 보려면 '구'를 입력해보세요"
+        placeholder="전체 지역리스트를 보려면 '구'를 입력해 보세요"
         ref={inputEl}
       />
       </div>

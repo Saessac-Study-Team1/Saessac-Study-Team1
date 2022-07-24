@@ -55,7 +55,7 @@ export default function MyInfo({userID, nickname, introduce, setNickname, setInt
         maxLength="70"
         ></input>
         <div className="mypage-btnwrapper__topright">
-          <button className="mypage-btn greenbtn" onClick={() => {
+          <button className="mypage-btn blackbtn" onClick={() => {
             toggleEiditPopup();
             submitNickname();
             }} >저장</button>

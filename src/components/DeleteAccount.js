@@ -40,7 +40,7 @@ export default function DeleteAccount(){
                   <div className="mypage-bottomright__ModalMsg">정말로 회원정보를 삭제하시겠습니까?</div>
                   <div className="mypage-bottomright__ModalButtonArea">
                     <button className="mypage-btn" onClick={modalHandler}>취소</button>
-                    <button className="mypage-btn greenbtn" onClick={deleteAccountHandler}>확인</button>
+                    <button className="mypage-btn blackbtn" onClick={deleteAccountHandler}>확인</button>
                   </div>
               </div>
             </div>

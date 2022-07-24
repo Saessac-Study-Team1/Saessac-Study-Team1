@@ -2,6 +2,7 @@
   box-sizing: border-box;
   padding:0;
   margin:0;
+
 }
 
 .mypage-container {
@@ -10,6 +11,7 @@
   justify-content: center;
   align-items: center;
   margin-top: 2rem;
+  background-color: white;
 }
 
 /* 버튼 스타일(전역) */
@@ -23,28 +25,29 @@
   border-radius: 0.2rem;
   transition:0.15s; 
   background-color: rgb(255, 255, 255);
-  color:#0EA958;
+  color:black;
 }
 
 .mypage-btn:hover {
   background: #e6e7e7;
 }
 
-.greenbtn {
-  background-color: #0EA958;
+.blackbtn {
+  background-color: black;
   color:rgb(255, 255, 255);
 }
 
-.greenbtn:hover {
-  background: #68c696;
+.blackbtn:hover {
+  background: #655b6f;
 }
 
 .mypage-btnUnderline {
   font-size: 1rem;
   text-decoration: underline;
-  color:#0EA958;
-  background-color: #EEEEEE;
+  color:rgb(32, 31, 31);
   border: none;
+  font-weight: 600;
+  background-color: white;
 }
 
 button.mypage-btnUnderline {
@@ -52,7 +55,7 @@ button.mypage-btnUnderline {
   transition:0.1s; 
 }
 button.mypage-btnUnderline:hover {
-  color: #28de80;
+  color:rgb(157, 157, 157);
 }
 
 .redbtn {
@@ -62,7 +65,6 @@ button.mypage-btnUnderline:hover {
 }
 
 .graybtn {
-  background-color: #d9d6d6;
   color: rgb(94, 93, 93);
 } 
 
@@ -112,7 +114,7 @@ button.mypage-btnUnderline:hover {
   position:relative;
   top:20px; left: 20px;
   border: 8px solid rgb(250, 250, 250);
-  border-top:8px solid #0EA958;
+  border-top:8px solid #0b0b0b;
   border-radius:100%;
   transform:translate(-50%, -50%); 
   width:40px;
@@ -178,7 +180,6 @@ button.mypage-btnUnderline:hover {
   height: 40px;
   border: solid rgb(197, 193, 193) 1px;
   border-radius: 3px;
-  background-color: #EEEEEE;
 }
 
 .mypage-inputForm__introduce{
@@ -188,7 +189,6 @@ button.mypage-btnUnderline:hover {
   height: 30px;
   border: solid rgb(197, 193, 193) 1px;
   border-radius: 3px;
-  background-color: #EEEEEE;
 }
 
 /* mypage-화면 하단 */
@@ -240,6 +240,9 @@ button.mypage-btnUnderline:hover {
   flex-wrap: wrap;
   margin-top: 2px;
 }
+/* .mypage-bottomright__content-activityArea:focus-within {
+  border: 1px solid gray;
+} */
 
 ul.mypage-bottomright__activityAreas {
   display: flex;
@@ -254,9 +257,9 @@ li.mypage-bottomright__activityArea {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  color: #fff;
+  color: white;
   list-style: none;
-  background-color: #0EA958;
+  background-color: black;
   margin: 0 6px 6px 0;
   border-radius: 6px;
   padding: 6px 6px;
@@ -265,13 +268,14 @@ li.mypage-bottomright__activityArea {
 }
 
 .mypage-bottomright__activityArea-name{
+  background-color: black;
   font-size: 1rem;
 }
 
 .mypage-bottomright__activityArea-closeicon{
   margin-left: 6px;
   background-color:#fff;
-  color:#0EA958;
+  color:black;
   border-radius: 100%;
   width: 16px;
   height: 16px;
@@ -290,7 +294,6 @@ li.mypage-bottomright__activityArea {
   font-size: 0.95rem;
   height: 30px;
   margin: 0rem 0.5rem 0.5rem 0;
-  background-color: #EEEEEE;
   color:rgb(82, 79, 79);
   outline: none;
 }
@@ -323,13 +326,46 @@ li.mypage-bottomright__activityArea {
   list-style-type: none;
   margin: 0.2rem 0.2rem;
   padding: 0.3rem;
-  border-radius: 10px;
+  border-radius: 3px;
   cursor: pointer;
 }
 
 .mypage-bottomright__autoComplete:hover {
-  background-color:#b9f3bb;
+  background-color:#c7c7c7;
   transition: 0.5s;
+}
+
+/* 내가 쓴 글보기 */
+.mypage-bottomright__myPostsClickBtnContainer {
+  display: flex;
+}
+
+.mypage-bottomright__myPostsCloseBtnWrapper {
+  display: flex;
+  width: 400px;
+  justify-content: flex-end;
+  margin-top: 0.5rem;
+}
+
+.mypage-bottomright__myPostsContainer {
+  margin-top: 0.6rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.mypage-bottomright__myPostsWrapper {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 30px;
+  align-items: flex-start;
+}
+  
+.mypage-bottomright__myPost {
+  text-decoration: none;
+  color: rgb(43, 43, 43);
+  padding-top: 0.5rem;
+  cursor: pointer;
+  font-weight: 500;
 }
 
 
@@ -359,17 +395,20 @@ li.mypage-bottomright__activityArea {
 
 .mypage-bottomright__pwDescription {
   font-size: 1rem;
-  color:rgb(129, 126, 126);
+  color:rgb(82, 80, 80);
   text-align: left;
   margin-top: 0.2rem;
 }
 .mypage-bottomright__pwInput {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   border: rgb(166, 163, 163) solid 1px;
   border-radius: 3px;
-  padding-left: 0.5rem;
   width:400px;
-  background-color: #EEEEEE;
+  padding:0.1rem 0.2rem;
+}
+
+.mypage-bottomright__pwInput:focus {
+  outline: transparent;
 }
 
 .mypage-bottomright__buttonwrapper {
@@ -386,7 +425,7 @@ li.mypage-bottomright__activityArea {
 }
 .mypage-bottomright__deleteAccountWrapper > button {
   margin: 0.7rem 0;
-  flex-basis: 30px;
+  padding: 0.5rem 1.2rem;
 }
 .mypage-bottomright__deleteAccountDescription {
   font-size: 0.9rem;
@@ -410,9 +449,9 @@ li.mypage-bottomright__activityArea {
 .mypage-bottomright__ModalView {
   height: 12rem;
   width: 20rem;
-  background: #EEEEEE;
   padding: 2rem;
   border-radius: 10px;
+  background-color: white;
 }
 
 .mypage-bottomright__ModalView > h3 {

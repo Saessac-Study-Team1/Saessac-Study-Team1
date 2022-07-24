@@ -110,7 +110,7 @@ export default function ChangePassword(){
               </li>
             </ul>
             <div className="mypage-bottomright__buttonwrapper">
-              <button className="mypage-btn greenbtn" onClick={() => {
+              <button className="mypage-btn blackbtn" onClick={() => {
                 togglePwPopup();
                 submitChangedPw();
                 }}

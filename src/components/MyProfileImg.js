@@ -76,13 +76,13 @@ export default function MyProfileImg({user}) {
         width="50px" alt="profile image" />
         <input 
               ref={imgInput} 
-              className="mypage-btn greenbtn"
+              className="mypage-btn blackbtn"
               type="file" 
               accept="image/*"
               onChange={(e)=>SaveImgFile(e)}
               style={{display:"none"}}
               ></input>
-        <button className="mypage-btn greenbtn"  onClick={(e)=>onImgInputBtnClick(e)}>이미지 변경</button>        
+        <button className="mypage-btn blackbtn"  onClick={(e)=>onImgInputBtnClick(e)}>이미지 변경</button>        
         <button className="mypage-btn" onClick={()=>deleteImgFile()}>이미지 제거</button>
       </div>
     );
