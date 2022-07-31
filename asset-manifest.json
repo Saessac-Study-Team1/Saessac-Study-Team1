@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/runners/static/css/main.708d207d.css",
-    "main.js": "/runners/static/js/main.66f4ef79.js",
-    "index.html": "/runners/index.html",
-    "main.708d207d.css.map": "/runners/static/css/main.708d207d.css.map",
-    "main.66f4ef79.js.map": "/runners/static/js/main.66f4ef79.js.map"
+    "main.css": "/Saessac-Study-Team1/static/css/main.708d207d.css",
+    "main.js": "/Saessac-Study-Team1/static/js/main.a1dd68f3.js",
+    "index.html": "/Saessac-Study-Team1/index.html",
+    "main.708d207d.css.map": "/Saessac-Study-Team1/static/css/main.708d207d.css.map",
+    "main.a1dd68f3.js.map": "/Saessac-Study-Team1/static/js/main.a1dd68f3.js.map"
   },
   "entrypoints": [
     "static/css/main.708d207d.css",
-    "static/js/main.66f4ef79.js"
+    "static/js/main.a1dd68f3.js"
   ]
 }
