@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Saessac-Study-Team1/static/css/main.708d207d.css",
-    "main.js": "/Saessac-Study-Team1/static/js/main.fa5d062d.js",
+    "main.js": "/Saessac-Study-Team1/static/js/main.f357b9e9.js",
     "index.html": "/Saessac-Study-Team1/index.html",
     "main.708d207d.css.map": "/Saessac-Study-Team1/static/css/main.708d207d.css.map",
-    "main.fa5d062d.js.map": "/Saessac-Study-Team1/static/js/main.fa5d062d.js.map"
+    "main.f357b9e9.js.map": "/Saessac-Study-Team1/static/js/main.f357b9e9.js.map"
   },
   "entrypoints": [
     "static/css/main.708d207d.css",
-    "static/js/main.fa5d062d.js"
+    "static/js/main.f357b9e9.js"
   ]
 }
