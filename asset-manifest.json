@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/runners/static/css/main.708d207d.css",
-    "main.js": "/runners/static/js/main.e87c8202.js",
+    "main.js": "/runners/static/js/main.e09de420.js",
     "index.html": "/runners/index.html",
     "main.708d207d.css.map": "/runners/static/css/main.708d207d.css.map",
-    "main.e87c8202.js.map": "/runners/static/js/main.e87c8202.js.map"
+    "main.e09de420.js.map": "/runners/static/js/main.e09de420.js.map"
   },
   "entrypoints": [
     "static/css/main.708d207d.css",
-    "static/js/main.e87c8202.js"
+    "static/js/main.e09de420.js"
   ]
 }
